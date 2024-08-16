@@ -44,14 +44,15 @@ export default function Home() {
   return (<>
     <div className="flex items-center justify-center py-10">
       <div className="w-full max-w-6xl p-10 rounded-xl">
-        <h1 className="text-3xl font-bold text-center mb-10">
-          State License Status
+        <h1 className="text-3xl font-bold text-center mb-10 text-slate-700">
+          Cross State Licensing
         </h1>
         <USAMapComponent states={states} />
         <StateList states={states} onAction={handleAction} />
       </div>
     </div>
     <Modal open={open} setOpen={setOpen} message={message} />
+    <a target='_blank' className="absolute top-5 right-5 text-slate-500 text-xs" href="https://matthewklimek.com">Made by Matthew Klimek</a>
   </>
   );
 }
