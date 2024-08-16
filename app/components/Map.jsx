@@ -23,7 +23,7 @@ const USAMapComponent = ({ states }) => {
     return (<>
 
         {isLoading ?
-            <div className="flex items-center justify-center h-[675px]">
+            <div className="flex items-center justify-center h-[300px] md:h-[675px]">
                 <Loading /> {/* Replace with your spinner component */}
             </div>
             :
