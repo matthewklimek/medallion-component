@@ -6,6 +6,7 @@ import { LicenseState, statesData, actionMap, backgroundMap } from "./utils/util
 import clsx from "clsx";
 import { Modal } from "./components/Modal";
 import { StateList } from "./components/StateList";
+import Head from "next/head";
 
 
 
@@ -42,6 +43,9 @@ export default function Home() {
 
 
   return (<>
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <div className="flex items-center justify-center py-10">
       <div className="w-full max-w-6xl p-10 rounded-xl">
         <h1 className="text-3xl font-bold text-center mb-10 text-slate-700">
